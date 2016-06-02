@@ -22,6 +22,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'Shougo/neocomplcache.vim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'derekwyatt/vim-scala'
+Plugin 'pangloss/vim-javascript'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
