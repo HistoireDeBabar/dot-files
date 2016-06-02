@@ -7,6 +7,8 @@ export PATH=$PATH:$GOPATH/bin
 export PS1="\[\033[31m\]\u\[\033[m\]@\[\033[33m\]\h:\[\033[0;36m\]\w\[\033[m\]\$"
 export CLICOLOR=1
 export LSCOLORS=gxFxFxDxBxegedaBagaced
+# Set colors to match iTerm2 Terminal Colors
+export TERM=xterm-256color
 alias ls='ls -GFh'
 
 #Git Completion

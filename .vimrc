@@ -30,9 +30,8 @@ set expandtab
 set number
 
 syntax enable
-colorscheme molokai
 
-set shiftwidth=2
+set tabstop=4 shiftwidth=4 expandtab
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -48,6 +47,8 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#syntastic#enabled = 1
 let g:airline_theme='molokai'
+set laststatus=2
+set ambiwidth=double
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
@@ -59,3 +60,5 @@ let g:syntastic_auto_jump=1
 let g:syntastic_stl_format = '[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
 
 let g:neocomplcache_enable_at_startup = 1
+
+colorscheme molokai
