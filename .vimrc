@@ -36,12 +36,21 @@ set tabstop=4 shiftwidth=4 expandtab
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-set statusline+=%{fugitive#statusline()}
 
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_stl_format = "[%E{Error:: %fe #%e}%B{, }%W{Warn:: %fw #%w} || %t]"
 
 let g:rehash256 = 1
 
 let g:go_fmt_command = "goimports"
+
+let g:syntastic_javascript_checkers = ['jscs']
+let g:syntastic_enable_signs=1
+let g:syntastic_auto_jump=1
+let g:syntastic_stl_format = '[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
 
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#branch#enabled = 1
@@ -49,15 +58,6 @@ let g:airline#extensions#syntastic#enabled = 1
 let g:airline_theme='molokai'
 set laststatus=2
 set ambiwidth=double
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_javascript_checkers = ['jscs']
-let g:syntastic_enable_signs=1
-let g:syntastic_auto_jump=1
-let g:syntastic_stl_format = '[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
 
 let g:neocomplcache_enable_at_startup = 1
 
